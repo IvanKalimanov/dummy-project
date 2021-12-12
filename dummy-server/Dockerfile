@@ -12,6 +12,6 @@ COPY *.go ./
 
 RUN go build -o /dummy-server
 
-EXPOSE 8080
+EXPOSE 5000
 
 CMD [ "/dummy-server" ]
