@@ -1,0 +1,12 @@
+version: "3"
+services:
+  server:
+    build: dummy-server/
+    ports:
+      - 5000:5000
+  client:
+    build: dummy-client/
+    ports: 
+      - 5001:5001
+    depends_on:
+      - server
