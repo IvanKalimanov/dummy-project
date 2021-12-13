@@ -11,6 +11,6 @@ COPY *.go ./
 
 RUN go build -o /dummy-client
 
-EXPOSE 5000
+EXPOSE 5001
 
 CMD [ "/dummy-client" ]
