@@ -6,7 +6,6 @@ services:
       - 5000:5000
   client:
     build: dummy-client/
-    ports: 
-      - 5001:5001
+    network_mode: host
     depends_on:
       - server
